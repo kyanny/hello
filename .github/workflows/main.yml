@@ -41,3 +41,6 @@ jobs:
           gh pr-draft
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ context.issue.number }}
+          OWNER: ${{ context.repo.owner }}
+          REPO: ${{ context.repo.repo }}
