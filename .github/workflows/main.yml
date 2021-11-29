@@ -38,6 +38,6 @@ jobs:
           # gh pr view ${ISSUE} -R ${OWNER}/${REPO}
           gh extension install kyanny/gh-pr-draft
           # gh pr checkout ${ISSUE} -R ${OWNER}/${REPO}
-          # gh pr-draft
+          gh pr-draft
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
