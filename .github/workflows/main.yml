@@ -11,4 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: python3 -c 'import requests; print(1)'
+      - run: df -h
+      - run: mount
+      - run: pwd
