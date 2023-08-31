@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: df -h
-      - run: mount
+      - run: mount | column -t
       - run: pwd
